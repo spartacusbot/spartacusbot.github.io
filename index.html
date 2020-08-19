@@ -1,21 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-.button2 {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  onclick: "minimize"
+<p id="demo" onclick="myFunction()" z-index = 4>Click me.</p>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
 }
-</style>
 </head>
 <body>
 <script>
@@ -23,19 +13,10 @@ function minimize() {
   document.getElementById("Frame2").setAttribute("height", 0);
 }
 </script>
-<button id= "button2" class="button button2" onclick= "minimize" >Blue</button>
 <iframe id="Frame1" style="width: 100%; height: 200%;   display: block; position: absolute; " src="https://www.aquilinedrones.com/" scrolling="no">
 </iframe>
 <iframe id="Frame2" style="width: 300px; height: 300px; bottom: 0;    right: 0;    display: block; position: fixed; overflow: hidden;  z-index: 2;" src="https://dzfjc8tru1y8o.cloudfront.net/index.html">
 </iframe>
-<script>
-document.getElementBtId("Frame2").setAttribute("height", 0);
-</script>
-<p id="demo" onclick="myFunction()" z-index = 4>Click me.</p>
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-}
 </script>
 </body>
 </html>
