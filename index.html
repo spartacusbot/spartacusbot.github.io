@@ -19,9 +19,10 @@
         }
       </script>
       <script>
-        function open(frame){
+        function open(frame2){
           var frame = document.getElementById("Frame1");
-          frame.parentNode.appendChild("Frame2");
+          var frame2 = document.getElementById("Frame2");
+          frame.parentNode.appendChild(frame2);
         }
       </script>
       <div style="z-index: 2; position: absolute">
