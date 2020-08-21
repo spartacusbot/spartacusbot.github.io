@@ -18,8 +18,15 @@
           frame.parentNode.removeChild(frame);
         }
       </script>
+      <script>
+        function open(frame){
+          var frame = document.getElementById("Frame2");
+          frame.parentNode.appendChild(frame);
+        }
+      </script>
       <div style="z-index: 2; position: absolute">
-        <button onclick="remove()">Click me</button>
+        <button onclick="remove()">close</button>
+        <button onclick = "open()">open</button>
       </div>
   </body>
 </html>
