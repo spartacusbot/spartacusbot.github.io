@@ -25,7 +25,8 @@
       </iframe>
       <script>
         function minimize() {
-          document.write(document.getElementById('Frame2').contentWindow.document.getElementById('height'));
+          var ifrm = document.getElementById('Frame2');
+          ifrm.style.height = '0px'; // set width
         }
       </script>
       <script>
