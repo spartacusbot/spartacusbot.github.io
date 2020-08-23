@@ -9,6 +9,14 @@
           border: None;
           z-index: 2;
         }
+        div.fixed2{
+          position: fixed;
+          bottom: 0px;
+          right: 0px;
+          border: none;
+          z-index: 2;
+          display: none;
+        }
       </style>
     </head>
     <body>
@@ -22,10 +30,15 @@
           ifrm.style.height = '40px'; // set height
           var buttonmin = document.getElementById("Button1");
           buttonmin.style.display = "none";
+          var buttonmax = document.getElementById("Button2");
+          buttonmax.style.display = "block";
         }
       </script>
       <div class="fixed">
         <button onclick="minimize()"; id= "Button1";>close</button>
+      </div>
+      <div class="fixed2">
+        <button id= "Button2";>open</button>
       </div>
   </body>
 </html>
