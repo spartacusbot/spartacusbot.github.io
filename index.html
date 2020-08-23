@@ -14,7 +14,7 @@
           bottom: 0px;
           right: 0px;
           border: None;
-          z-index: -1;
+          z-index: 1;
         }
       </style>
     </head>
@@ -34,26 +34,11 @@
           
         }
       </script>
-      <script>
-        function remove(frame, button){
-          var frame = document.getElementById("Frame2");
-          frame.parentNode.removeChild(frame);
-          var button = document.getElementById("Button1");
-          button.parentNode.removeChild(button);
-        }
-      </script>
-      <script>
-        function open(frame2){
-          var frame = document.getElementById("Frame1");
-          var frame2 = document.getElementById("Frame2");
-          frame2.parentNode.appendChild(frame2);
-        }
-      </script>
       <div class="fixed">
         <button onclick="minimize()"; id= "Button1";>close</button>
       </div>
       <div class="fixed2">
-        <button onclick="open()"; id= "Button2";>open</button>
+        <button onclick="minimize()"; id= "Button2";>open</button>
       </div>
   </body>
 </html>
