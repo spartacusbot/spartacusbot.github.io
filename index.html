@@ -14,7 +14,7 @@
           bottom: 0px;
           right: 0px;
           border: None;
-          z-index: 1;
+          z-index: -1;
         }
       </style>
     </head>
@@ -26,9 +26,10 @@
       <script>
         function minimize() {
           var ifrm = document.getElementById('Frame2');
-          ifrm.style.height = '40px'; // set height
+          ifrm.style.height = '45px'; // set height
           var button = document.getElementById("Button1");
-          button.parentNode.removeChild(button);
+          button.style.z-index = "1";
+          
         }
       </script>
       <script>
