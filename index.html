@@ -40,13 +40,14 @@
         function open(frame2){
           var frame = document.getElementById("Frame1");
           var frame2 = document.getElementById("Frame2");
+          frame2.parentNode.appendChild(frame2);
         }
       </script>
       <div class="fixed">
         <button onclick="remove()"; id= "Button1";>close</button>
       </div>
       <div class="fixed2">
-        <button onclick="open()"; id= "Button2";>close</button>
+        <button onclick="open()"; id= "Button2";>open</button>
       </div>
   </body>
 </html>
