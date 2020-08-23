@@ -21,9 +21,11 @@
           var ifrm = document.getElementById('Frame2');
           ifrm.style.height = '40px'; // set height
           var buttonmin = document.getElementById("Button1");
-          buttonmin.div.style.z-index = "2";
+          buttonmin.style.display = "none";
         }
       </script>
-      <button onclick="minimize()"; id= "Button1"; style=div.fixed;>close</button>
+      <div class="fixed">
+        <button onclick="minimize()"; id= "Button1";>close</button>
+      </div>
   </body>
 </html>
