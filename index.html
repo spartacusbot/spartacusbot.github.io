@@ -9,6 +9,8 @@
           border: none;
           z-index: 2;
         }
+      </style>
+      <style>
         div.fixed2{
           position: fixed;
           bottom: 280px;
@@ -31,13 +33,13 @@
           var buttonmin = document.getElementById("Button1");
           buttonmin.style.display = "none";
           var buttonmax = document.getElementById("Button2");
-          buttonmax.style2.display = 'block';
+          buttonmax.style.display = 'block';
         }
       </script>
       <div class="fixed">
         <button onclick="minimize()"; id= "Button1";>close</button>
       </div>
-      <div class="fixed">
+      <div class="fixed2">
         <button id= "Button2"; display = none>open</button>
       </div>
   </body>
