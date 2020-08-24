@@ -10,16 +10,6 @@
           z-index: 2;
         }
       </style>
-      <style>
-        div.fixed2{
-          position: fixed;
-          bottom: 280px;
-          right: 45px;
-          border: none;
-          z-index: 2;
-          display: none;
-        }
-      </style>
     </head>
     <body>
       <iframe id="Frame2" style="width: 300px; height: 300px; bottom: 0;    right: 0;    display: block; position: fixed; overflow: hidden;  z-index: 2;" src="https://dzfjc8tru1y8o.cloudfront.net/index.html">
@@ -32,14 +22,14 @@
           ifrm.style.height = '43px'; // set height
           var buttonmin = document.getElementById("Button1");
           buttonmin.style.display = "none";
-          var buttonmax = document.getElementById("Button2");
-          buttonmax.style.display = 'block';
+          //var buttonmax = document.getElementById("Button2");
+          //buttonmax.style.display = 'block';
         }
       </script>
       <div class="fixed">
         <button onclick="minimize()"; id= "Button1";>close</button>
       </div>
-      <div style = "position: fixed; bottom: 20px; right: 40px; border: none; z-index: 2; display: block;">
+      <div style = "position: fixed; bottom: 20px; right: 40px; border: none; z-index: 1; display: block;">
         <button id= "Button2";>open</button>
       </div>
   </body>
