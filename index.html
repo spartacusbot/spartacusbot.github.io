@@ -28,7 +28,8 @@
         function minimize() {
           var ifrm = document.getElementById('Frame2');
           ifrm.style.height = '43px'; // set height
-          document.getElementById("myDiv").style.display = "none";
+          var buttonmax = document.getElementById("Button2");
+          buttonmax.style.display = "none";
           var buttonmin = document.getElementById("Button1");
           buttonmin.style.display = "none";
         }
@@ -37,7 +38,7 @@
         <button onclick="minimize()"; id= "Button1";>close</button>
       </div>
       <div class = "fixed2">
-        <button>open</button> 
+        <button id= "Button2";>open</button> 
       </div>
   </body>
 </html>
