@@ -1,6 +1,16 @@
 <!DOCTYPE html>
   <html>
     <head>
+      <style> 
+        #myDIV {
+          position: fixed;
+          bottom: 20px;
+          right: 55px;
+          border: none;
+          z-index: 2;
+          display: none;
+        }
+      </style>
       <style>
         div.fixed {
           position: fixed;
@@ -22,14 +32,14 @@
           ifrm.style.height = '43px'; // set height
           var buttonmin = document.getElementById("Button1");
           buttonmin.style.display = "none";
-          var buttonmax = document.getElementById("div2");
+          var buttonmax = document.getElementById("myDiv");
           buttonmax.style.display = "block";
         }
       </script>
       <div class="fixed">
         <button onclick="minimize()"; id= "Button1";>close</button>
       </div>
-      <div id = "div2" style = "position: fixed; bottom: 20px; right: 40px; border: none; z-index: 2; display: none;">
+      <div id = "myDIV">
         <button id= "Button2";>open</button>
       </div>
   </body>
