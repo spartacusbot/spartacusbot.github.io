@@ -22,13 +22,13 @@
           ifrm.style.height = '43px'; // set height
           var buttonmin = document.getElementById("Button1");
           buttonmin.style.display = "none";
-          var buttonmax = document.getElementById("Button2");
+          var buttonmax = document.getElementById("div2");
           buttonmax.style.display = "none";
         }
       </script>
       <div class="fixed">
         <button onclick="minimize()"; id= "Button1";>close</button>
-      </div>
+      </div id = "div2">
       <div style = "position: fixed; bottom: 20px; right: 40px; border: none; z-index: 1; display: block;">
         <button id= "Button2";>open</button>
       </div>
