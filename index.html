@@ -20,6 +20,11 @@
       </style>
     </head>
     <body> 
+      <div id="textToSynth">
+        <input autofocus size="23" type="text" id="textEntry" value="It's very good to meet you."/>
+        <button class="btn default" onClick="speakText()">Synthesize</button>
+        <p id="result">Enter text above then click Synthesize</p>
+      </div>
       <iframe id="Frame2" style="width: 300px; height: 300px; bottom: 0;    right: 0;    display: block; position: fixed; overflow: hidden;  z-index: 2;" src="https://dzfjc8tru1y8o.cloudfront.net/index.html">
       </iframe>
       <iframe id="Frame1" style="width: 100%; height: 200%;   display: block; position: absolute; " src="https://www.aquilinedrones.com/" scrolling="yes">
